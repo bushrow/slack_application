@@ -27,7 +27,7 @@
                 <span class="dot"
                     style="background-color: rgb(115, 190, 100);padding-top:1px;transform: rotate(45deg);">
                     <p>
-                        < >
+                        <>
                     </p>
                 </span>
             </div>
@@ -180,6 +180,7 @@
                 <div id="channel-header">
                     <p id="channel-title"># cover-letter</p>
                     <p id="channel-title-dropdown">&or;</p>
+                    <p id="channel-topic"></p>
                 </div>
                 <div id="channel-pins">
                     <p>+</p>
@@ -280,12 +281,21 @@
                 </div>`
 
             get_page = function (page_name) {
+                var topics = {
+                    'cover-letter': "A brief introduction to me and why I want to work for Slack",
+                    'resume': "More details about my experience and what I can bring to the table",
+                    'general': "My work style and what motivates me to perform",
+                    'random': "Some random things about me as a person"
+                }
+
+
                 var xhr = new XMLHttpRequest();
                 xhr.open('GET', "./templates/" + page_name + '.html', true);
                 xhr.onreadystatechange = function () {
                     if (this.readyState !== 4) return;
                     if (this.status !== 200) return; // or whatever error handling you want
                     document.getElementById('channel-title').innerHTML = "# " + page_name;
+                    document.getElementById('channel-topic').innerHTML = topics[page_name];
                     document.getElementById('channel-content').innerHTML = this.responseText;
                     row = document.getElementById(page_name + '-link')
                     nodes = row.childNodes;

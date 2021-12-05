@@ -291,7 +291,15 @@ body {
     font-family: 'arial narrow'; 
     position: relative; 
     top: -2px; 
-    left: 6px
+    left: 6px;
+}
+
+#channel-topic {
+    font-size: 13px;
+    font-weight: 200;
+    color: gray;
+    display: inline-block; 
+    margin-left: 20px;
 }
 
 #channel-pins {
