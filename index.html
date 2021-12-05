@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Charles Bushrow's Resume</title>
+        <meta name="description" content="The best resume you'll see today.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./slack.css">
+        <link rel="icon" type="image/png" href="./images/slack.png">
+    </head>
+
+    <body>
+        <div class="top-nav">
+            <div class="window-buttons">
+                <span class="dot" style="background-color: rgb(255, 100, 100);">
+                    <p>x</p>
+                </span>
+                <span class="dot" style="background-color: rgb(255, 195, 100);">
+                    <p>–</p>
+                </span>
+                <span class="dot"
+                    style="background-color: rgb(115, 190, 100);padding-top:1px;transform: rotate(45deg);">
+                    <p>
+                        <>
+                    </p>
+                </span>
+            </div>
+            <div class="search-bar-wrapper">
+                <div>
+                    <img src="./images/history.png" width=18px />
+                </div>
+                <input class="search-bar" placeholder="&#x1F50D;   Search Qualifications" disabled />
+                <div>
+                    <img src="./images/help.png" width=20px />
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="workspace-nav">
+                <div class="workspace-icon-selected">
+                    <span class="workspace-icon" title="The Ideal Candidate"
+                        style="margin: 4px; background-image: url(./images/me.png);background-size: 40px;"></span>
+                </div>
+                <div style="width: 100%;">
+                    <span class="workspace-icon" title="Inferior Candidate 1"
+                        style="background-color: lightblue;"></span>
+                </div>
+                <div style="width: 100%;">
+                    <span class="workspace-icon" title="Inferior Candidate 2"
+                        style="background-color: lightgreen;"></span>
+                </div>
+                <div title="The search is over!" style="width: 100%;">
+                    <h1 class="add-workspace">+</h1>
+                </div>
+            </div>
+            <div class="side-nav">
+                <div class="side-nav-section workspace-name">
+                    <div style="width:75%; min-width: 40px; display: inline-block;">
+                        <h4 style="margin: 8px 5px 0px;">Charles Bushrow</h4>
+                        <span class="dot"
+                            style="position:relative; top: 2px; margin: 0px 4px 0px 8px; background-color: green;"></span>
+                        <p style="display: inline-block; font-size: 12px; opacity: 0.7;">Hiring Team</p>
+                    </div>
+                    <a
+                        href="mailto:charlie.bushrow@gmail.com?subject=Next Steps with Slack&body=Hi Charlie,%0d%0a%0d%0aWe just looked through your resume submission and we think you would be a great fit with our team! We would love to talk more about the opportunities here and get to know more about you. Over the coming week, When are you available for an interview?%0d%0a%0d%0aLooking forward to connecting soon!%0d%0a%0d%0aBest,%0d%0aSlack's Super Cool Hiring Team">
+                        <div
+                            style="width: 40px; height: 40px; border-radius: 50%; background-color: white; margin-top:8px; float: right; text-align: center;">
+                            <img src="./images/compose.png" width="25px" style="margin-top: 6px;">
+                        </div>
+                    </a>
+                </div>
+                <div class="side-nav-channels-wrapper">
+                    <div class="side-nav-section favorites">
+                        <div class="side-nav-row">
+                            <img src="./images/threads.png" width="20px"
+                                style="position:relative; top:4px; margin-right:5px;" />
+                            <span>Threads</span>
+                        </div>
+                        <div class="side-nav-row">
+                            <img src="./images/dms.png" height="15px"
+                                style="position:relative; top:4px; margin: -10px 9px 0px 3px;" />
+                            <span>All DMs</span>
+                        </div>
+                        <div class="side-nav-row">
+                            <p style="display: inline-block; margin: 0px 9px 0px 3px; opacity:0.7">@</p>
+                            <span>Mentions & reactions</span>
+                        </div>
+                        <div class="side-nav-row">
+                            <img src="./images/drafts.png" width="15px"
+                                style="position:relative; top:3px; margin: -10px 9px 0px 3px;" />
+                            <span>Drafts</span>
+                        </div>
+                        <div class="side-nav-row">
+                            <img src="./images/bookmark.png" width="15px"
+                                style="position:relative; top:3px; margin: -10px 9px 0px 3px;" />
+                            <span>Saved items</span>
+                        </div>
+                        <div class="side-nav-row">
+                            <img src="./images/connect.png" width="20px"
+                                style="position:relative; top:5px; margin: -10px 5px 0px 1px;" />
+                            <span>Slack Connect</span>
+                        </div>
+                        <div class="side-nav-row" id="more-faves">
+                            <img src="./images/more.png" width="15px"
+                                style="position:relative; top:3px; margin: -10px 9px 0px 3px;" />
+                            <span>More</span>
+                        </div>
+                    </div>
+                    <div class="side-nav-section connections">
+                        <div class="side-nav-row header">
+                            <span
+                                style="position:relative; margin: -10px 9px 0px 3px;transform: rotate(-90deg);">&#9660;</span>
+                            <span style="opacity:0.5;">Connections</span>
+                            <div class="side-nav-row-header-add">
+                                +
+                            </div>
+                            <div class="side-nav-row-header-menu">
+                                <img src="./images/more.png" width="15px" style="position:relative; top:2px" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="side-nav-section channels">
+                        <div class="side-nav-row header">
+                            <span style="position:relative; margin: 0px 9px 0px 3px;">&#9660;</span>
+                            <span>Reasons to Hire Me</span>
+                            <div class="side-nav-row-header-add">
+                                +
+                            </div>
+                            <div class="side-nav-row-header-menu">
+                                <img src="./images/more.png" width="15px" style="position:relative; top:2px" />
+                            </div>
+                        </div>
+                        <div class="side-nav-row" id="cover-letter-link" onclick="get_page('cover-letter');">
+                            <span style="position:relative; margin: 0px 10px 0px 20px;">#</span>
+                            <span>cover-letter</span>
+                            <span class="dot notification-icon" id="cover-letter-notifications">8</span>
+                        </div>
+                        <div class="side-nav-row" id="resume-link" onclick="get_page('resume');">
+                            <span style="position:relative; margin: 0px 10px 0px 20px;">#</span>
+                            <span>resume</span>
+                            <span class="dot notification-icon" id="resume-notifications">1</span>
+                        </div>
+                        <div class="side-nav-row" id="general-link" onclick="get_page('general');">
+                            <span style="position:relative; margin: 0px 10px 0px 20px;">#</span>
+                            <span>general</span>
+                            <span class="dot notification-icon" id="general-notifications">4</span>
+                        </div>
+                        <div class="side-nav-row" id="random-link" onclick="get_page('random');">
+                            <span style="position:relative; margin: 0px 10px 0px 20px;">#</span>
+                            <span>random</span>
+                            <span class="dot notification-icon" id="random-notifications">6</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="side-nav-section huddle">
+                    <div class="side-nav-row header" style="height: 40px;">
+                        <div style="width: 150px; height: 25px; display: inline-block;">
+                            <img src="./images/huddle.png" width="20px"
+                                style="position:relative; top:5px; margin: -10px 5px 0px 1px;" />
+                            <span>charles-bushrow</span>
+                        </div>
+                        <a href="tel:+14344092336">
+                            <div class="huddle-icons">
+                                <span class="dot" style="top:-7px; position: relative"></span>
+                                <img src="./images/headphones.png" width="30px"
+                                    style="position:relative; top:-12px; margin: -10px -5px 0px -3px;" />
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="main">
+                <div id="channel-header">
+                    <p id="channel-title"># cover-letter</p>
+                    <p id="channel-title-dropdown">&or;</p>
+                </div>
+                <div id="channel-pins">
+                    <p>+</p>
+                    <p>Add a bookmark</p>
+                </div>
+                <div id="channel-content">
+
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+
+            var cover_letter = `
+                <div class="message-group - label - wrapper">
+                <div class="message-group-label" > Saturday, December 4th</div >
+                </div >
+                <div class="message-group">
+                    <div class="message">
+                        <p class="message-time">1:15 PM</p>
+                        <div class="message-text">
+                            <p class="message-name">charlie 🌳🛶</p>
+                            Hi! My name is Charlie Bushrow. I'm an avid user of slack, and a hopeful and passionate
+                            applicant to this role.
+                        </div>
+                    </div>
+                    <div class="message">
+                        <p class="message-time">1:17 PM</p>
+                        <div class="message-text">
+                            <p class="message-name">charlie 🌳🛶</p>
+                            I am a data scientist and software developer with roughly 5 years of experience in the field. I
+                            graduated with an undergraduate degree in Industrial and Systems Engineering, and that has provided
+                            the foundation for all of my continued and ongoing learning. Even though I'm not applying my degree
+                            to a "typical" engineering role, I am extremely grateful for the way that the engineering program
+                            trained me to approach problems and develop a solution. I see myself as a problem-solver first
+                            and a coder second.
+                        </div>
+                    </div>
+                    <div class="message">
+                        <p class="message-time">1:20 PM</p>
+                        <div class="message-text">
+                            <p class="message-name">charlie 🌳🛶</p>
+                            I currently work for Booz Allen Hamilton as a client-facing data science consultant, and I've had
+                            some amazing opportunities to dive into different datasets and improve/standardize processes or
+                            facilitate understanding for clients. Most of my solutions with the firm are built in Python, but I
+                            also enjoy any opportunity I can get to try new things and learn new approaches or languages.
+                        </div>
+                    </div>
+                    <div class="message">
+                        <p class="message-time">1:22 PM</p>
+                        <div class="message-text">
+                            <p class="message-name">charlie 🌳🛶</p>
+                            The project I am working on now is with the Air Force, where I provide analysis of the hours flown
+                            by each squadron on each plane across the whole Air Force.
+                            One of the coolest things about this role is the impact: at the end of the fiscal year,
+                            I was asked whether or not the Air Force could afford to shift $500 million from the training budget
+                            to another fund. I was solely responsible for making that determination and did so by building out
+                            the storyline of how it would impact the execution of training hours, as well as the downstream
+                            impacts on maintenance and personnel retention.
+                        </div>
+                    </div>
+                    <div class="message">
+                        <p class="message-time">1:22 PM</p>
+                        <div class="message-text">
+                            <p class="message-name">charlie 🌳🛶</p>
+                            What I'm looking for now is a place where I can have a different kind of impact.
+                        </div>
+                    </div>
+                    <div class="message">
+                        <p class="message-time">1:23 PM</p>
+                        <div class="message-text">
+                            <p class="message-name">charlie 🌳🛶</p>
+                            As a government contractor, I have about 4 separate email accounts for different agencies and for
+                            Booz Allen itself. It's a confusing and ineffective setup that causes frustration every
+                            day in the process of trying to do simple tasks. On top of that, we work with subcontractors from
+                            different companies who do not have access to the same fileshares and messaging platforms. I
+                            wholeheartedly agree with Slack's mission to replace email and provide a collaboration hub, and I
+                            want to support that mission from the inside.
+                        </div>
+                    </div>
+                    <div class="message">
+                        <p class="message-time">1:24 PM</p>
+                        <div class="message-text">
+                            <p class="message-name">charlie 🌳🛶</p>
+                            I would appreciate the opportunity to talk more about how we can leverage my skillset to help
+                            realize Slack's mission, and how the mission itself will expand and adapt as technology changes over
+                            time.
+                        </div>
+                    </div>
+                    <div class="message">
+                        <p class="message-time">1:24 PM</p>
+                        <div class="message-text">
+                            <p class="message-name">charlie 🌳🛶</p>
+                            Please press the "New Message" icon in the top left to send me an email, or click the Huddles
+                            icon in the bottom left to call my cell. I look forward to meeting you soon!
+                        </div>
+                    </div>
+                </div>`
+
+            get_page = function (page_name) {
+                var xhr = new XMLHttpRequest();
+                xhr.open('GET', "./templates/" + page_name + '.html', true);
+                xhr.onreadystatechange = function () {
+                    if (this.readyState !== 4) return;
+                    if (this.status !== 200) return; // or whatever error handling you want
+                    document.getElementById('channel-title').innerHTML = "# " + page_name;
+                    document.getElementById('channel-content').innerHTML = this.responseText;
+                    row = document.getElementById(page_name + '-link')
+                    nodes = row.childNodes;
+                    for (var i = 0; i < nodes.length; i++) {
+                        if (nodes[i].nodeName.toLowerCase() == "span") {
+                            nodes[i].style.opacity = 0.8;
+                            nodes[i].style.fontWeight = 100;
+                        }
+                    }
+
+                    var link_names = ['cover-letter', 'resume', 'general', 'random'];
+                    for (var i = 0; i < link_names.length; i++) {
+                        document.getElementById(link_names[i] + '-link').style.backgroundColor = "rgb(65, 15, 65)";
+                    }
+                    document.getElementById(page_name + "-notifications").style.visibility = "hidden";
+                    row.style.backgroundColor = "rgb(18, 100, 163)";
+                };
+                xhr.send();
+            }
+
+            document.body.onload = get_page("general");
+        </script>
+    </body>
+
+</html>
