@@ -440,6 +440,10 @@ body {
     line-height: 24px;
 }
 
+.skills-certs {
+    width: 100%;
+}
+
 .message-clean .message-name {
     font-size: 16px;
     font-weight: bolder;
@@ -451,6 +455,6 @@ body {
     font-size: 12px;
     font-weight: lighter;
     color: gray;
-    margin-right: 12px;
+    margin-right: 15px;
 
 }
