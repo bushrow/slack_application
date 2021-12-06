@@ -13,6 +13,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./slack.css">
         <link rel="icon" type="image/png" href="./images/slack.png">
+        <script type="text/javascript">
+            window.onload = function () {
+                var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
+                if (mobile) {
+                    alert("Visit this on a Computer for Better View");
+                } else {
+
+                }
+            }
+        </script>
     </head>
 
     <body>
@@ -27,7 +37,7 @@
                 <span class="dot"
                     style="background-color: rgb(115, 190, 100);padding-top:1px;transform: rotate(45deg);">
                     <p>
-                        < >
+                        <>
                     </p>
                 </span>
             </div>
@@ -227,12 +237,12 @@
 
             get_page = function (page_name) {
                 var topics = {
+                    'welcome': null,
                     'cover-letter': "A brief introduction to me and why I want to work for Slack",
                     'resume': "More details about my experience and what I can bring to the table",
                     'general': "My work style and what motivates me to perform",
                     'random': "Some random things about me as a person"
                 }
-
 
                 var xhr = new XMLHttpRequest();
                 xhr.open('GET', "./templates/" + page_name + '.html', true);
@@ -261,7 +271,7 @@
                 xhr.send();
             }
 
-            document.body.onload = get_page("cover-letter");
+            document.body.onload = get_page("welcome");
         </script>
     </body>
 
