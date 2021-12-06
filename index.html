@@ -15,7 +15,7 @@
         <link rel="icon" type="image/png" href="./images/slack.png">
         <script type="text/javascript">
             window.onload = function () {
-                var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
+                var mobile = ((window.innerWidth <= 800) && (window.innerHeight <= 600));
                 if (mobile) {
                     alert("Visit this on a Computer for Better View");
                 } else {
@@ -37,7 +37,7 @@
                 <span class="dot"
                     style="background-color: rgb(115, 190, 100);padding-top:1px;transform: rotate(45deg);">
                     <p>
-                        <>
+                        < >
                     </p>
                 </span>
             </div>
