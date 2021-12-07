@@ -6,6 +6,10 @@ body {
     overflow-y: hidden;
 }
 
+a {
+    text-decoration: none;
+}
+
 .top-nav {
     background-color: rgb(50, 15, 50);
     text-align: center;
@@ -335,10 +339,6 @@ body {
 }
 #channel-pins div {
     display: inline-block;
-}
-
-#channel-pins a {
-    text-decoration: none;
 }
 
 #channel-pins p {
