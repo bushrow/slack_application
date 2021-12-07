@@ -333,14 +333,30 @@ body {
     margin: 0;
 
 }
+#channel-pins div {
+    display: inline-block;
+}
+
+#channel-pins a {
+    text-decoration: none;
+}
+
 #channel-pins p {
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 200;
     color: gray;
     margin: 0;
-    margin-right: 8px;
+    margin-left: 2px;
     display: inline-block;
 }
+
+#channel-pins img {
+    display: inline-block;
+    width: 10px;
+    opacity: 0.6;
+    transform: scaleX(-1);
+}
+
 #channel-content {
     padding:0px;
     margin: 0px;

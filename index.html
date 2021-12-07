@@ -37,7 +37,7 @@
                 <span class="dot"
                     style="background-color: rgb(115, 190, 100);padding-top:1px;transform: rotate(45deg);">
                     <p>
-                        < >
+                        <>
                     </p>
                 </span>
             </div>
@@ -58,8 +58,11 @@
         <div class="content">
             <div class="workspace-nav">
                 <div class="workspace-icon-selected">
-                    <span class="workspace-icon" title="The Ideal Candidate"
-                        style="margin: 4px; background-image: url(./images/me.png);background-size: 40px;"></span>
+                    <a target="blank_" href="https://linkedin.com/in/bushrow">
+                        <span class="workspace-icon" title="The Ideal Candidate"
+                            style="margin: 4px; background-image: url(./images/me.png);background-size: 40px;">
+                        </span>
+                    </a>
                 </div>
                 <div style="width: 100%;">
                     <span class="workspace-icon" title="Inferior Candidate 1"
@@ -224,8 +227,16 @@
                     <p id="channel-topic"></p>
                 </div>
                 <div id="channel-pins">
-                    <p>+</p>
-                    <p>Add a bookmark</p>
+                    <a target="_blank" href="./resume.pdf">
+                        <div id="channel-pins-items" title="Resume">
+                            <img src="./images/pin.png" />
+                            <p>1 Pinned</p>
+                        </div>
+                    </a>
+                    <div>
+                        <p id="bm-sym" style="font-size: 16px;">+</p>
+                        <p>Add a bookmark</p>
+                    </div>
                 </div>
                 <div id="channel-content">
 
@@ -251,7 +262,16 @@
                     if (this.status !== 200) return; // or whatever error handling you want
                     document.getElementById('channel-title').innerHTML = "# " + page_name;
                     document.getElementById('channel-topic').innerHTML = topics[page_name];
+                    if (page_name == "resume") {
+                        document.getElementById('channel-pins-items').style.display = "inline-block";
+                        document.getElementById('bm-sym').style.marginLeft = "14px";
+                    } else {
+                        document.getElementById('channel-pins-items').style.display = "none";
+                        document.getElementById('bm-sym').style.marginLeft = "0px";
+                    }
+
                     document.getElementById('channel-content').innerHTML = this.responseText;
+
                     row = document.getElementById(page_name + '-link')
                     nodes = row.childNodes;
                     for (var i = 0; i < nodes.length; i++) {
