@@ -12,9 +12,14 @@ a {
 
 .mobile-message {
     display: none;
+    text-align: center;
     justify-content: center;
     align-items: center;
     height: 75vh;
+}
+
+.mobile-message p {
+    width: 60vw;
 }
 
 @media screen and (max-width: 700px) {
